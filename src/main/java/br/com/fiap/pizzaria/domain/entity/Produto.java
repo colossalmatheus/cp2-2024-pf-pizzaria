@@ -16,7 +16,9 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "TB_PRODUTO")
+@Table(name = "TB_PRODUTO",uniqueConstraints = {
+        @UniqueConstraint(name = "UK_PRODUTO_SABOR" , columnNames = {"NM_PRODUTO","SABOR"})
+})
 public class Produto {
 
     @Id

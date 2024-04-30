@@ -15,7 +15,9 @@ import java.util.Set;
 @NoArgsConstructor
 
 @Entity
-@Table(name = "TB_PIZZARIA")
+@Table(name = "TB_PIZZARIA",uniqueConstraints = {
+        @UniqueConstraint(name = "UK_PIZZARIA_NOME" , columnNames = {"NM_PIZZARIA"})
+})
 public class Pizzaria {
 
     @Id
