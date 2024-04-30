@@ -11,6 +11,6 @@ public record OpcionalResponse(
         String nome,
         Long id,
         BigDecimal preco,
-        SaborRequest sabor
+        SaborResponse sabor
 ) {
 }
