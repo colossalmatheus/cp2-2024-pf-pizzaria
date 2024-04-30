@@ -11,7 +11,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 
 @Entity
-@Table(name = "TB_SABOR")
+@Table(name = "TB_SABOR",uniqueConstraints = {
+        @UniqueConstraint(name = "UK_NM_SABOR" , columnNames = {"NM_SABOR"})
+})
 public class Sabor {
 
     @Id

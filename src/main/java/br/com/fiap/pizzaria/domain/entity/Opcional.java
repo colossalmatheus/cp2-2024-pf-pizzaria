@@ -16,7 +16,7 @@ import java.math.BigDecimal;
 @Entity
 @Table(name = "TB_OPCIONAL",
         uniqueConstraints = {
-                @UniqueConstraint(name = "UK_OPCIONAL_SABOR" , columnNames = {"OPCIONAL","SABOR"})
+                @UniqueConstraint(name = "UK_OPCIONAL_SABOR" , columnNames = {"NM_OPCIONAL","SABOR"})
         })
 public class Opcional {
 
