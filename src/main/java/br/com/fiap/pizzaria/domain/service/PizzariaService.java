@@ -1,10 +1,6 @@
 package br.com.fiap.pizzaria.domain.service;
 
 import br.com.fiap.pizzaria.domain.dto.request.PizzariaRequest;
-<<<<<<< HEAD
-=======
-import br.com.fiap.pizzaria.domain.dto.response.OpcionalResponse;
->>>>>>> origin/main
 import br.com.fiap.pizzaria.domain.dto.response.PizzariaResponse;
 import br.com.fiap.pizzaria.domain.dto.response.ProdutoResponse;
 import br.com.fiap.pizzaria.domain.entity.Pizzaria;
@@ -17,11 +13,8 @@ import java.util.Collection;
 import java.util.Objects;
 
 @Service
-<<<<<<< HEAD
+
 public class PizzariaService implements ServiceDTO<Pizzaria, PizzariaRequest, PizzariaResponse>{
-=======
-public class PizzariaService implements ServiceDTO<Pizzaria, PizzariaRequest, PizzariaResponse{
->>>>>>> origin/main
 
     @Autowired
     private PizzariaRepository repo;

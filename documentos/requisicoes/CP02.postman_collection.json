@@ -1,0 +1,338 @@
+{
+	"info": {
+		"_postman_id": "ec3c04c2-afa0-469e-8d6a-303d31f0b001",
+		"name": "CP02",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30769724"
+	},
+	"item": [
+		{
+			"name": "localhost/pizzarias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/pizzarias",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pizzarias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/pizzarias/{id}",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/pizzarias",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Teteu pizzaria\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/pizzarias",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pizzarias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/pizzarias/{id}/cardapio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/pizzarias/1/cardapio",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pizzarias",
+						"1",
+						"cardapio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/pizzarias/{id}/cardapio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"Teteu pizzaria\",\r\n        \"cardapio\": \r\n            { \r\n            \r\n            \"produto\":{\r\n\r\n                \"opcionais\": null,\r\n                \"nome\": \"Pizza\",\r\n                \"id\": 2,\r\n                \"sabor\": {\r\n                    \"id\": 7,\r\n                    \"descricao\": \"Delicionsa muçarela\",\r\n                    \"nome\": \"Muçarela\"\r\n                },\r\n                \"preco\": 59.99\r\n            }\r\n            }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/pizzarias/1/cardapio",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pizzarias",
+						"1",
+						"cardapio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/produtos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/produtos",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/produtos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"carne\",\r\n  \"preco\": 20.00,\r\n  \"sabor\": {\r\n    \"id\": 1\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/produtos",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/produtos/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/produtos/2",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"produtos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/produtos/{id}/opcionais",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/produtos/2/opcionais",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"produtos",
+						"2",
+						"opcionais"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/produtos/{id}/opcionais",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"opcionais\": [\r\n        {\r\n          \"id\": 3,\r\n          \"nome\": \"Fanta\",\r\n          \"preco\": 12.99,\r\n          \"sabor\": {\r\n            \"id\": 4,\r\n            \"nome\": \"Uva\",\r\n            \"descricao\": null\r\n          }\r\n        },\r\n        {\r\n          \"id\": 5,\r\n          \"nome\": \"Fanta\",\r\n          \"preco\": 12.99,\r\n          \"sabor\": {\r\n            \"id\": 6,\r\n            \"nome\": \"Laranja\",\r\n            \"descricao\": null\r\n          }\r\n        },\r\n        {\r\n          \"id\": 2,\r\n          \"nome\": \"Borda de Catupiri\",\r\n          \"preco\": 9.99,\r\n          \"sabor\": {\r\n            \"id\": 3,\r\n            \"nome\": \"Catupiri\",\r\n            \"descricao\": null\r\n          }\r\n        },\r\n        {\r\n          \"id\": 4,\r\n          \"nome\": \"Coca-Cola\",\r\n          \"preco\": 19.99,\r\n          \"sabor\": {\r\n            \"id\": 5,\r\n            \"nome\": \"Cola\",\r\n            \"descricao\": null\r\n          }\r\n        },\r\n        {\r\n          \"id\": 1,\r\n          \"nome\": \"Sprite\",\r\n          \"preco\": 12.99,\r\n          \"sabor\": {\r\n            \"id\": 2,\r\n            \"nome\": \"Limão\",\r\n            \"descricao\": null\r\n          }\r\n        }\r\n      ],\r\n      \"preco\": 20.00,\r\n      \"id\": 2,\r\n      \"sabor\": {\r\n        \"id\": 7,\r\n        \"nome\": \"Muçarela\",\r\n        \"descricao\": \"Delicionsa muçarela\"\r\n      },\r\n      \"nome\": \"Pizza\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/produtos/2/opcionais",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"produtos",
+						"2",
+						"opcionais"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/opcionais",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/opcionais",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"opcionais"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/opcionais",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"guarana\",\r\n    \"sabor\": {\r\n        \"id\": 1\r\n    },\r\n    \"preco\": 20\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/opcionais",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"opcionais"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/opcionais/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/opcionais/2",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"opcionais",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/sabores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/sabores",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sabores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/sabores",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"portuga\",\r\n    \"descricao\": \"top\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/sabores",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sabores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/sabores/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/sabores/2",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sabores",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -67,4 +67,6 @@ public class Produto {
     )
 
     private Set<Opcional> opcionais = new LinkedHashSet<>();
+
+
 }
