@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:mariadb://${DB_DESENV_SERVER:localhost}:${DB_DESENV_PORT:3306}/${DB_DESENV_NAME:desenv-spring-pizzaria}?createDatabaseIfNotExist=true
-    username: ${DB_DESENV_USERNAME:root}
-    password: ${DB_DESENV_PASSWORD:root}
+    url: jdbc:mariadb://localhost:3306/sprint1?createDatabaseIfNotExist=true
+    username: root
+    password: root
   jpa:
     hibernate:
       ddl-auto: create
